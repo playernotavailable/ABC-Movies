@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Movies</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/93fcd97ac3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav content-wrapper align-center justify-between">
+            <div class="logo">
+                <i class="fa-solid fa-ticket"></i>
+                <h3>ABC Movies</h3>
+            </div>
+            <nav class="links align-center">
+                <a href="#" class="link router-link-exact-active router-link-active">Home</a>
+                <a href="#findamovie" class="link">Find A Movie</a>
+                <a href="#contact" class="btn-contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="landing-page">
+            <div class="content-wrapper">
+                <div class="landing-content">
+                    <h1>The Best Place to Find Your Favorite <span class="purple">Movies</span></h1>
+                    
+                    <div class="search-wrapper">
+                        <input 
+                            id="search-index" 
+                            type="text" 
+                            class="form-control" 
+                            placeholder="Search for movies...">
+                        <button id="search-button" class="btn-search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Search
+                        </button>
+                    </div>
+                </div>
+                
+                <img src="./assets/undraw_playlist_lwhi.svg" alt="Movie playlist illustration" class="playlist">
+            </div>
+            <div class="movie__list"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
