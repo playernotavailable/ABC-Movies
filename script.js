@@ -41,7 +41,7 @@ async function main(keyword) {
     movieListEl.innerHTML = '<p class="loading">Searching for movies...</p>';
     
     try {
-        const url = `http://www.omdbapi.com/?apikey=15cbfa3a&s=${keyword}`;
+        const url = `https://www.omdbapi.com/?apikey=15cbfa3a&s=${keyword}`;
         console.log('Fetching URL:', url); 
         
         const response = await fetch(url);

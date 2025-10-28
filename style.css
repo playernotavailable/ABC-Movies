@@ -67,8 +67,14 @@ button {
 }
 
 .navbar .logo {
-    font-size: 32px;
+    font-size: 24px;
     color: #6030b1;
+    display: flex;
+}
+
+.fa-ticket {
+    font-size: 30px;
+    padding-right: 14px;
 }
 
 .navbar .links {
@@ -135,6 +141,7 @@ button {
     box-shadow: 0 4px 12px rgba(96, 48, 177, 0.3);
 }
 
+
 /*** LANDING PAGE ***/
 
 .landing-page {
@@ -148,7 +155,6 @@ button {
 }
 
 h1 {
-    max-width: 730px;
     font-size: 60px;
     font-weight: 700;
     line-height: 1.25;
@@ -161,13 +167,18 @@ h1 {
     color: #6030b1;
 }
 
+.search-wrapper {
+    display: flex;
+    padding: 24px 24px;
+}
+
 .form-control {
     width: 100%;
     max-width: 600px;
     font-size: 20px;
     padding: 16px 32px;
     height: 56px;
-    border: 2px solid #e5e7eb;
+    border: 2px solid #6030b1;
     border-radius: 50px;
     text-align: center;
     transition: border-color 0.3s;
@@ -182,11 +193,27 @@ h1 {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .playlist {
-    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+}
+
+.movie__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie__card {
+    padding: 12px 12px;
+}
+
+.movie__info {
+    padding: 8px 0;
 }
 
 
