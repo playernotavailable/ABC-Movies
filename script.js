@@ -2,13 +2,14 @@
 //poster http://img.omdbapi.com/?apikey=15cbfa3a&
 // api key 15cbfa3a
 
+let currentMovies = []; 
+
 document.addEventListener('DOMContentLoaded', function() {
     
     const searchButton = document.getElementById('search-button');
     const searchInput = document.getElementById('search-index');
     const sortSelect = document.getElementById('sort-select');
     
-    let currentMovies = []; 
     
     if (!searchButton || !searchInput) {
         console.error('Elements not found!');
